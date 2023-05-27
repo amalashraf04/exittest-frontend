@@ -1,0 +1,16 @@
+<div class="screen" style="background-image: url('../../assets/bg1.webp'); background-size: cover;">
+  <div class="container pb-5">
+      <div class="row justify-content-center mt-2 pt-5">
+          <div class="col-4"> <!-- Reduced the width to col-4 -->
+              <form #userlogin="ngForm" (ngSubmit)="Verify()">
+                  <h2>Verify OTP</h2>
+                  <div class="form-group">
+                      <label for="exampleInputOtp">Enter OTP</label>
+                      <input type="text" class="form-control" id="exampleInputOtp" aria-describedby="emailHelp" name="otp" [(ngModel)]="User.otp" #otp="ngModel" placeholder="Enter OTP">
+                  </div><br>
+                  <button type="submit" class="btn btn-primary">Verify</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
